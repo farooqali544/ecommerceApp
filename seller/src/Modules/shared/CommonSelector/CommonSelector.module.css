@@ -1,0 +1,38 @@
+
+.itemTypePicker{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: rgba(95, 95, 95, 0.784);
+    font-weight: 600;
+  }
+  
+  .itemTypePicker li{
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  }
+  
+  .itemTypePicker li:hover{
+    background-color: var(--secondaryLight);
+  }
+  
+  .itemTypePicker #activeItem{
+    color: var(--secondaryColor);
+    position: relative;
+    
+  }
+  
+  .itemTypePicker #activeItem::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondaryColor);
+  }
+  
+  

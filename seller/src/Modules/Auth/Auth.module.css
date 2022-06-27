@@ -1,0 +1,149 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  /* max-width: 1440px; */
+  width: 100%;
+  align-self: center;
+  /* padding: 20px; */
+}
+
+.container .img {
+  flex: 1;
+  background-color: #2c73eb;
+}
+
+.container .signWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.signWrapper .backArrow {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #8692a6;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.signWrapper .signForm {
+  min-height: 500px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signForm > span {
+  color: #8692a6;
+  padding: 4px 0px;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.signForm .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputs > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #696f79;
+  font-weight: 400;
+}
+
+.inputs .splitInputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  gap: 15px;
+}
+
+.inputs .splitInputs div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputs .splitInputs > div input {
+  min-width: 100px;
+  width: 100%;
+}
+
+.inputs input,
+.inputs select {
+  border: 1px solid #8692a6;
+  outline: none;
+  padding: 15px;
+  border-radius: 6px;
+  transition: all 0.3s;
+  color: #494949;
+}
+
+.inputs select {
+  background-color: white;
+}
+
+.inputs input:not(#dob, input[type="checkbox"], :placeholder-shown),
+.inputs #dob:focus,
+.inputs select {
+  border: 1px solid #1565d8;
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
+}
+
+.inputs button {
+  padding: 15px;
+  border: none;
+  background-color: #2c73eb;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.inputs .remember {
+  flex-direction: row;
+  gap: 10px;
+}
+
+.signForm .noAccount {
+  margin-top: 20px;
+  border: none;
+  color: #696f79;
+}
+
+.signForm .noAccount > span {
+  color: #2c73eb;
+  border: none;
+  cursor: pointer;
+}
+
+.inputs .errorLabel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.errorLabel >span{
+    display: flex;
+    align-items: center;
+}
+
+.inputs #errorInput{
+    border: 1px solid #d6301b !important;
+}

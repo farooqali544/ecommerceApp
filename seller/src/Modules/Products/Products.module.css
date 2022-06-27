@@ -1,0 +1,210 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: flex-start;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Sellers Form */
+.formContainer {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  background-color: white;
+  padding: 15px 25px;
+  padding-bottom: 25px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px 5px rgba(41, 41, 41, 0.259);
+  overflow: auto;
+  max-height: 700px;
+}
+
+.formContainer .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid rgba(116, 116, 116, 0.249);
+}
+
+.formContainer .title span {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.formContainer .title h4 {
+  color: rgba(0, 0, 0, 0.777);
+  padding-bottom: 5px;
+  font-size: 2rem;
+}
+
+.formContainer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.formContainer label {
+  color: #4e4e4e;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.formContainer input,
+.formContainer select,
+.formContainer textarea {
+  height: 40px;
+  color: #4e4e4e;
+  padding: 4px 10px;
+  outline: none;
+  border: none;
+  /* box-shadow: 0px 2px 5px rgba(81, 79, 79, 0.182); */
+  border: 1px solid rgba(85, 85, 85, 0.316);
+  border-radius: 6px;
+  background-color: white;
+}
+
+.formContainer textarea {
+  height: auto;
+  resize: none;
+  font-size: 14px;
+}
+
+.formContainer button {
+  /* height: 32px; */
+  background-color: var(--secondaryColor);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  align-self: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.formContainer button:hover {
+  background-color: rgba(47, 129, 237, 0.83);
+}
+
+.formContainer .sellerList {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  gap: 10px;
+}
+
+.formContainer .listItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* padding: 10px 0px; */
+  border-radius: 5px;
+  /* align-items: flex-start; */
+  /* background-color: black; */
+}
+
+.listItem img {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.listItem .name {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.listItem .manage {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  overflow: hidden;
+  color: white;
+  font-weight: 500;
+  align-items: center;
+}
+
+.manage .verified {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #2f81edb4;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+#verifiedActive {
+  background-color: var(--secondaryColor);
+  pointer-events: none;
+}
+
+.manage .refuted {
+  background-color: rgba(216, 27, 27, 0.522);
+  padding: 8px 12px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+#refutedActive {
+  background-color: rgba(216, 27, 27, 0.826);
+  pointer-events: none;
+}
+
+.formContainer .buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+.buttonsContainer button {
+  font-weight: 500;
+}
+
+.buttonsContainer .discardButton {
+  background-color: transparent;
+  color: black;
+  border: 1px solid var(--secondaryColor);
+}
+
+.formContainer .multipleInputs {
+  display: flex;
+  flex-direction: row;
+}
+
+.multipleInputs > div {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.multipleInputs input {
+  min-width: 2px;
+  width: 100%;
+}
+
+.formContainer .deleteIcon {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #332B63;
+  cursor: pointer;
+}
+
+.deleteIcon svg {
+  fill: white;
+}

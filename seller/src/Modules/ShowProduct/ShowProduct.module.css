@@ -1,0 +1,138 @@
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 30px;
+  max-height: 600px;
+}
+
+.container .specs {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* overflow-y: scroll; */
+}
+
+.specs .productTitle {
+  position: relative;
+  align-self: flex-start;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.specs .productTitle::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 2px;
+  width: 30%;
+  height: 2px;
+  background-color: black;
+}
+
+.productTitle > span {
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 15px;
+  color: rgb(79, 150, 79);
+  background-color: rgba(79, 150, 79, 0.118);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.productTitle .inactive {
+  background-color: rgba(255, 166, 0, 0.105);
+  color: orange;
+}
+
+.specs .price {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  color: black;
+}
+
+.specs .reviews {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviews svg {
+  margin-top: -3px;
+  fill: rgb(92, 92, 92);
+}
+
+.reviews .reviewCount {
+  margin-left: 10px;
+}
+
+.specs .description {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.specs .stock,
+.specs .color {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  font-weight: 600;
+}
+
+.specs .color {
+  padding-right: 15px;
+}
+
+.color > span {
+  background-color: black;
+  padding: 16px;
+  border-radius: 100%;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px -4px black;
+}
+
+.swiper {
+  flex: 5;
+  width: 500px;
+}
+
+.swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.specs .sizeWeightWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 500;
+}
+
+.sizeWeightWrapper > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sizeWeightWrapper > div label {
+  font-weight: 600;
+}
+
+.sizeWeightWrapper > div span {
+  color: rgb(96, 96, 96);
+}
+
+img {
+  cursor: pointer;
+}
+
+.zoomedImage{
+  max-height: 100vh;
+  max-width: 100%;
+  object-fit: contain;
+}

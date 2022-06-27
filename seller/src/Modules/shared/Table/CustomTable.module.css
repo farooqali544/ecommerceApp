@@ -1,0 +1,106 @@
+.table thead tr th {
+  /* background-color: #0b192bdf; */
+  background-color: transparent;
+  /* color: white; */
+  color: rgb(95, 95, 95);
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.headColumn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.headColumn svg {
+  fill: rgba(95, 95, 95, 0.778);
+}
+
+.table thead tr th:first-child,
+.table tbody tr td:first-child {
+  padding-left: 10px;
+}
+.table thead tr th:last-child,
+.table tbody tr td:last-child {
+  padding-right: 0px;
+}
+
+.table tbody tr td {
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  /* text-align: center; */
+  /* max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+}
+
+.table tbody tr:nth-child(2n) {
+  /* background-color: #e7e5e5d5; */
+}
+
+.clickableBody tr:hover {
+  background-color: var(--secondaryLight);
+  cursor: pointer;
+}
+
+.avatar img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: start;
+}
+
+.avatar span {
+  font-size: 14px;
+}
+
+.verifyButton,
+.refuteButton,
+.canceledButton {
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.verifyButton:hover,
+.refuteButton:hover {
+  /* transform: scale(1.05);
+  transform-origin: center; */
+}
+
+.verifyButton {
+  background-color: rgba(79, 150, 79, 0.118);
+  color: rgb(79, 150, 79);
+}
+
+.refuteButton {
+  background-color: rgba(255, 166, 0, 0.105);
+  color: orange;
+}
+
+.canceledButton {
+  background-color: rgba(255, 0, 0, 0.107);
+  color: rgb(255, 0, 0);
+}
+
+.colorColumn {
+  display: inline-block;
+  padding: 16px;
+  border-radius: 100%;
+  box-shadow: 0px 0px 10px -4px black;
+}
