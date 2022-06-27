@@ -1,0 +1,16 @@
+.container{
+    width: 500px;
+    height: 472px;
+    background-color: white;
+    border-radius: 14px;
+    padding: 16px 0px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container h5{
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 0px 20px;
+}

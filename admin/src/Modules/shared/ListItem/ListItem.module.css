@@ -1,0 +1,45 @@
+.listItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+
+  gap: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.listItem:hover {
+  background-color: rgba(47, 129, 237, 0.11);
+}
+
+#listItemActive {
+  background-color: rgba(47, 129, 237, 0.11);
+}
+
+.listItem span {
+  font-weight: 500;
+}
+
+#listItemActive span {
+  color: var(--secondaryColor);
+}
+
+.listItem svg{
+  min-width: 24px;
+}
+
+.listItem svg path {
+  fill: var(--tertiaryColor);
+}
+
+#listItemActive svg path {
+  fill: var(--secondaryColor);
+}
+
+@media screen and (max-width: 1100px) {
+  .listItem span {
+    display: none;
+  }
+}
