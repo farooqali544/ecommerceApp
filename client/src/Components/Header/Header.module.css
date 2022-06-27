@@ -1,0 +1,127 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.wrapper {
+  display: flex;
+  /* align-items: center; */
+  max-width: 1440px;
+  display: flex;
+  flex: 1;
+  padding: 10px 20px;
+  gap: 16px;
+}
+
+.profile {
+  width: 256px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.profile img {
+  border-radius: 100%;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.rightSide .searchBox {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.rightSide .logout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  color: var(--secondaryColor);
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.logout span {
+  opacity: 0;
+  transition: all 0.2s ease-out;
+  transform: translateX(-50%);
+}
+
+.rightSide .logout:hover {
+  background-color: var(--secondaryLight);
+}
+
+.rightSide .logout:hover span {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.logout svg {
+  margin-top: -1px;
+}
+
+.searchBox input {
+  height: 100%;
+  width: 100%;
+  padding: 0px 5px;
+  margin: 0px 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  transition: all 0.2s ease;
+  height: 40px;
+}
+
+.searchBox input:focus {
+  border-radius: 5px;
+  margin: 0px 10px;
+  padding: 0px 10px;
+  box-shadow: 0px 10px 60px -5px rgba(107, 102, 102, 0.388);
+}
+
+.searchBox svg {
+  margin-top: 2px;
+}
+
+.cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.cartItems {
+  position: absolute;
+  top: -5px;
+  left: 105%;
+  background-color: var(--secondaryColor);
+  color: white;
+  font-weight: 500;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+@media screen and (max-width: 800px) {
+  .profile {
+    display: none;
+  }
+}

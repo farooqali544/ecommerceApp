@@ -1,0 +1,150 @@
+.cartItemContainer {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  position: relative;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.cartItem {
+  /* background-color: black; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  border-radius: 14px;
+  min-width: 600px;
+  height: 120px;
+  justify-content: center;
+  background-color: white;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.cartItem:hover {
+  box-shadow: 5px 5px 10px rgba(28, 28, 28, 0.236);
+}
+
+.cartItem .thumbnail {
+  width: 100px;
+  margin: 0px 10px;
+}
+
+.thumbnail img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.cartItem .specs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  /* gap: 3px; */
+  overflow: auto;
+}
+
+.specs .name {
+  color: var(--secondaryColor);
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.specs .desc {
+  color: gray;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.desc .color {
+  padding: 10px;
+  border-radius: 100%;
+}
+
+.specs .sellerName {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.price {
+  color: var(--secondaryColor);
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.unitPrice,
+.quantity,
+.totalPrice {
+  font-size: 0.9rem;
+}
+
+.price .quantity,
+.price .totalPrice {
+  color: gray;
+}
+
+.checkoutContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  margin-left: 20px;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(28, 28, 28, 0.112);
+  /* height: 100%; */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 450px;
+  margin-top: 20px;
+}
+
+.checkoutContainer h5 {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.checkoutContainer .subTotal,
+.checkoutContainer .total {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(101, 101, 101);
+}
+
+.subTotal span, .total span{
+    color: black;
+    font-weight: 500;
+}
+
+.checkoutContainer button {
+  margin-top: 10px;
+  border: none;
+  background-color: var(--secondaryColor);
+  color: white;
+  padding: 10px 0px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.checkoutContainer button:hover {
+  opacity: 0.7;
+}
+
+.goback{
+    position: absolute;
+    top: -30px;
+    left: 0px;
+    cursor: pointer;
+}
+
+.goback:hover{
+    text-decoration: underline;
+}

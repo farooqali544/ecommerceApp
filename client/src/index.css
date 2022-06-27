@@ -1,0 +1,46 @@
+:root{
+  --primaryColor:#F7F7F7;
+  --secondaryColor: #2F80ED;
+  --tertiaryColor:#8E8E93;
+  --secondaryLight:rgba(47, 129, 237, 0.11);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5{
+  font-size: 1.5rem;
+}
+
+p,
+span {
+  font-size: 1rem;
+}
+
+
+
+
+
+        

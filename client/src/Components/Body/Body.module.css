@@ -1,0 +1,14 @@
+.container {
+  background-color: var(--primaryColor);
+  flex: 1;
+  display: flex;
+}
+
+.wrapper {
+  max-width: 1440px;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  margin: 20px auto;
+
+}
